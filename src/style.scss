@@ -1,0 +1,157 @@
+@keyframes slideUp {
+    0% {
+      transform: translateY(100%); // Start from below the bottom
+    }
+    100% {
+      transform: translateY(-50%); // Move to the center
+    }
+  }
+  /* style.scss */
+@keyframes slide-up-card {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-up-card {
+    animation: slide-up-card 4s ease forwards;
+    animation-delay: 1s; /* Adjusts the delay to start the animation */
+
+  }
+
+
+  .animate-slide-up {
+    animation: slideUp 4s ease forwards;
+  }
+  @keyframes zoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2);
+    }
+  }
+
+  .image-zoom-in {
+    animation: zoomIn 10s infinite alternate;
+  }
+  @keyframes zoomOut {
+    from {
+      transform: scale(1.1);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  .image-zoom-out {
+    animation: zoomOut 10s infinite alternate;
+  }
+
+
+  @keyframes slide-in-left {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .slide-in-left {
+    animation: slide-in-left 1s ease-out forwards;
+  }
+
+  .slide-in-right {
+    animation: slide-in-right 1s ease-out forwards;
+  }
+  @keyframes slide-down-card {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+
+  .animate-slide-down-card {
+    animation: slide-down-card 4s ease-in-out infinite;
+  }
+
+
+
+
+  @keyframes slide-down-card-bounce {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(20%);
+      opacity: 1;
+    }
+    60% {
+      transform: translateY(-10%);
+    }
+    70% {
+      transform: translateY(5%);
+    }
+    80% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+
+  .animate-slide-down-card-bounce {
+    animation: slide-down-card-bounce 4s ease-in-out infinite;
+  }
+
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+    20% {
+      transform: translateY(-30%);
+    }
+    40% {
+      transform: translateY(0%);
+    }
+    60% {
+      transform: translateY(-15%);
+    }
+    80% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  .animate-bounce {
+    animation: bounce 5s ease-in-out infinite;
+  }
